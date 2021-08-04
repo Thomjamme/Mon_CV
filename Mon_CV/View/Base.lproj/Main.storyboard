@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2vg-gc-LqW">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="o6t-e0-271">
+            <objects>
+                <navigationController id="2vg-gc-LqW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ofS-7r-MHo">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.48400702444063565" green="0.46666666666666667" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vQi-iD-hif" kind="relationship" relationship="rootViewController" id="e8t-Os-SsD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1R-QW-nfP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1083" y="-80"/>
+        </scene>
+        <!--Accueil-->
+        <scene sceneID="HRE-4w-wv1">
+            <objects>
+                <viewController id="vQi-iD-hif" customClass="WelcomeViewController" customModule="Mon_CV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yRC-pC-Bvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIt-CL-k3J">
+                                <rect key="frame" x="168" y="289" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Mon CV"/>
+                                <connections>
+                                    <segue destination="QH4-7d-SV0" kind="show" id="awC-IH-d0k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jj-VC-esy">
+                                <rect key="frame" x="152" y="175" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <state key="normal" title="Présentation"/>
+                                <connections>
+                                    <segue destination="2Vk-we-j2A" kind="show" id="bRQ-vD-Iir"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ou-RP-gAl">
+                                <rect key="frame" x="150" y="459" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Me contacter"/>
+                                <connections>
+                                    <segue destination="h77-5V-2jV" kind="show" id="pXg-9G-I1o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GrP-8W-Tpb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Accueil" id="lms-PA-NaC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRE-jj-vuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-260" y="-81.042654028436019"/>
+        </scene>
+        <!--Me contacter-->
+        <scene sceneID="61a-L0-R0q">
+            <objects>
+                <viewController id="h77-5V-2jV" customClass="meContacterViewController" customModule="Mon_CV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMZ-pd-He2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bDi-PF-zmN">
+                                <rect key="frame" x="15" y="346" width="360" height="458"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Appelez-moi !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZj-Fm-O8J">
+                                <rect key="frame" x="143" y="125" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJX-uA-T1U">
+                                <rect key="frame" x="142" y="199" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="06 13 63 44 48"/>
+                                <connections>
+                                    <action selector="btnCallClick:" destination="h77-5V-2jV" eventType="touchUpInside" id="oyu-wS-5iC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6JV-59-cfZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bDi-PF-zmN" firstAttribute="bottom" secondItem="XMZ-pd-He2" secondAttribute="bottom" constant="-40" id="BMo-gL-nic"/>
+                            <constraint firstItem="6JV-59-cfZ" firstAttribute="trailing" secondItem="bDi-PF-zmN" secondAttribute="trailing" constant="15" id="FhF-Ca-Yte"/>
+                            <constraint firstItem="bDi-PF-zmN" firstAttribute="top" secondItem="6JV-59-cfZ" secondAttribute="top" constant="258" id="IJX-PP-Jmw"/>
+                            <constraint firstItem="bDi-PF-zmN" firstAttribute="leading" secondItem="6JV-59-cfZ" secondAttribute="leading" constant="15" id="mex-NJ-xpn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Me contacter" id="voV-NT-5wJ"/>
+                    <connections>
+                        <outlet property="mapView" destination="bDi-PF-zmN" id="hzK-zj-cG3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQa-4l-HrX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566.15384615384619" y="328.43601895734594"/>
+        </scene>
+        <!--CV-->
+        <scene sceneID="2db-Xs-h3z">
+            <objects>
+                <viewController id="QH4-7d-SV0" customClass="ContacterViewController" customModule="Mon_CV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vGR-1y-iBs">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87P-WU-dEl" customClass="PDFView">
+                                <rect key="frame" x="31" y="114" width="327" height="420"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyo-Uf-h1e">
+                                <rect key="frame" x="136" y="558" width="118" height="41"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Partager mon CV"/>
+                                <connections>
+                                    <action selector="displayActivityViewController:" destination="QH4-7d-SV0" eventType="touchUpInside" id="vQb-af-pqR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sOC-q3-hsb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CV" id="KkO-8s-Pzi"/>
+                    <connections>
+                        <outlet property="pdfView" destination="87P-WU-dEl" id="TTF-IC-YU8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBo-Df-HqH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321.5384615384614" y="-81.042654028436019"/>
+        </scene>
+        <!--Présentation-->
+        <scene sceneID="CMs-R0-Nf5">
+            <objects>
+                <viewController id="2Vk-we-j2A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZrC-Tp-Pi9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlo-Pa-GG5">
+                                <rect key="frame" x="164" y="146" width="130" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Développeur mobile">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-He-pdb">
+                                <rect key="frame" x="20" y="256" width="67" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A propos :">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWi-ov-YlQ">
+                                <rect key="frame" x="20" y="427" width="127" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Mes compétences :">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBC-an-xbe">
+                                <rect key="frame" x="20" y="291" width="322" height="82"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Actuellement en recherche de formation pour excercer le métier de développeur mobile IOS afin d'acquerir les compétences.">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKf-9j-YyK">
+                                <rect key="frame" x="20" y="485" width="272" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="- Capacité à s'organiser, prioriser les tâches">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQU-ZG-4YN">
+                                <rect key="frame" x="20" y="514" width="144" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="- Capacité d'adaptation">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUq-WT-0vU">
+                                <rect key="frame" x="20" y="543" width="75" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="- Autonomie">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh3-ag-y7F">
+                                <rect key="frame" x="22" y="572" width="165" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="- Sens des responsabilités">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i90-VW-5OR">
+                                <rect key="frame" x="20" y="602" width="116" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="- Travail en équipe">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lz8-tx-okl">
+                                <rect key="frame" x="22" y="632" width="262" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="- Capacité à actualiser ses connaissances">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thomas" translatesAutoresizingMaskIntoConstraints="NO" id="GL2-3M-xqo">
+                                <rect key="frame" x="22" y="108" width="122" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry8-A6-hS4">
+                                <rect key="frame" x="164" y="108" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="JAMME Thomas">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="15" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7ow-tI-ub8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Présentation" id="omh-0B-MMc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ng-FA-7Tv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566.15384615384619" y="-468.48341232227489"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thomas" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
